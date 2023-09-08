@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>プロフィール編集</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="icon" href="Nexpanse-logos-removebg-preview.png" />
+
+</head>
+<body>
+  <header>
+    <!-- ナビゲーションなどをここに配置 -->
+  </header>
+  <main>
+    <div class="edit-profile">
+      <h2>プロフィール編集</h2>
+      <form>
+        <!-- 編集フォームの項目を追加 -->
+        <label for="username">ユーザー名:</label>
+        <input type="text" id="username" name="username" value="ユーザー名"><br>
+
+        <label for="message">一言メッセージ:</label>
+        <input type="message" id="message" name="emailmessage" value="やっほー"><br>
+
+        <label for="email">メールアドレス:</label>
+        <input type="email" id="email" name="email" value="example@example.com"><br>
+
+        <label for="phone">電話番号:</label>
+        <input type="phone" id="phone" name="phone" value="123-456-7890"><br>
+
+        <label for="skill_1">スキル1:</label>
+        <input type="skill_1" id="skill_1" name="skill_1" value="こんにちは"><br>
+        
+        <label for="skill_2">スキル2:</label>
+        <input type="skill_2" id="skill_2" name="skill_2" value="わーい"><br>
+        
+        <label for="project_1">プロジェクト1:</label>
+        <input type="project_1" id="project_1" name="project_1" value="わーい"><br>
+        
+        <label for="project_2">プロジェクト2:</label>
+        <input type="project_2" id="project_2" name="project_2" value="わーい"><br>
+        
+        <!-- 他のフォーム項目 -->
+
+        <button type="submit"><a href = "profile.html">保存</a></button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <!-- フッターのコンテンツ -->
+  </footer>
+  <script src="script.js"></script>
+
+
+  <script>
+    // フォーム送信時の処理
+    document.querySelector('form').addEventListener('submit', function(event) {
+      event.preventDefault(); // フォームの通常の送信を防止
+      
+      // フォームの値を収集
+      var username = document.querySelector('#username').value;
+      var message = document.querySelector('#message').value;
+      var email = document.querySelector('#email').value;
+      var phone = document.querySelector('#phone').value;
+      var skill1 = document.querySelector('#skill_1').value;
+      var skill2 = document.querySelector('#skill_2').value;
+      var project1 = document.querySelector('#project_1').value;
+      var project2 = document.querySelector('#project_2').value;
+      
+      // プロフィール情報を上書き
+      var profileContent = `
+        <img src="profile-icon.png" alt="プロフィール画像">
+        <h1>${username}</h1>
+        <p>${message}</p>
+        <div class="contact-info">
+          <p>メールアドレス: ${email}</p>
+          <p>電話番号: ${phone}</p>
+        </div>
+        <h2>スキル・専門分野</h2>
+        <ul>
+          <li>${skill1}</li>
+          <li>${skill2}</li>
+        </ul>
+        <h2>プロジェクト履歴</h2>
+        <ul>
+          <li>${project1}</li>
+          <li>${project2}</li>
+        </ul>
+        <button class="edit-button">編集</button>
+      `;
+      
+      // プロフィールを表示
+      var profileContainer = document.querySelector('.profile');
+      profileContainer.innerHTML = profileContent;
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+body {
+    background: gray;
+}
+
+/* div{
+    background: white;
+   }
+ */
+.container{
+    background: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+ul {
+    display: flex;
+    padding: 0;
+  }
+  
+li {
+    list-style: none;
+    margin-right: 1rem;
+  }
+img{
+    max-width: 100%;
+}
+
+.row{
+    display: flex;
+}
+
+main {
+    flex: 3;
+    margin-right: 3rem;
+}
+
+aside {
+    flex: 1;
+}
+
+footer {
+    background: dimgray;
+    color: white;
+    margin-top: 3rem;
+    padding: 3rem;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+.inquiry {
+    display: flex;
+}
+.inquiry section {
+    margin-left: 2rem;
+}
+
+input {
+    margin: 1rem 0;
+}
+
+@media (max-width:767px) {
+    .row, .inquiry {
+      flex-direction: column;
+    }
+  }
+
+/* 格言ガチャ */
+#gacha-display{
+    margin-top: 1rem;
+    min-height: 3rem;
+  }
+  
+  #gacha-button{
+    margin-bottom: 3rem;
+  }
+

@@ -1,0 +1,46 @@
+/* 既存のスタイルに追加 */
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin: 10px; /* マージンを調整 */
+}
+
+.logo img {
+  max-width: 150px; /* ロゴの最大幅を指定 */
+  width: auto;
+  height: auto;
+}
+
+.buttons {
+  display: flex; /* ログインボタンと無料会員登録ボタンを横並びに配置 */
+  gap: 10px; /* ボタン間の間隔 */
+  margin-left: auto;
+
+}
+
+.login-button a,
+.signup-button a{
+  color: white;
+  text-decoration: none;
+}
+
+.login-button,
+.signup-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #3f51b5;
+  color: white;
+  cursor: pointer;
+}
+
+.statistics {
+  display: flex; /* ログイン数と登録者数を横並びに配置 */
+  gap: 20px; /* 要素間の間隔 */
+  margin-top: 10px;
+  justify-content: center;
+}
+
+/* その他のスタイルは変更なし */
