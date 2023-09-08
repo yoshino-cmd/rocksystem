@@ -668,3 +668,16 @@ blockquote {
 .How{
     font-size: 20px;
 }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex-basis: 48%; /* コラムの幅を調整 */
+    padding: 20px;
+    border: 2px solid #ccc; /* グレーのボーダーを追加 */
+    border-radius: 10px; /* 丸い角を作成 */
+    margin: 10px;
+}

@@ -5,17 +5,6 @@
     <script src="script.js"></script>
 </head>
 
-    <!-- /* cspell:disable-file */
-    /* webkit printing magic: print all background colors */
-    html {
-        -webkit-print-color-adjust: exact;
-    }
-    * {
-        box-sizing: border-box;
-        -webkit-print-color-adjust: exact;
-    }
-    
-    html, -->
 
         
 </head><body>
@@ -88,12 +77,17 @@
     <img src = "desktop5.png"></img>
     <img src = "desktop6.png"></img>
 
-
-
-
-
-    
     <p id="b6cee4fa-0596-4771-88f9-2234c3709135" class="">ピン止めされた項目は見つかったかな？？<br><strong>PC->OS(C:)->ユーザー->ユーザー名の中にフォルダを作ってデータを管理するのが一般的。</strong></br></p>
+    <div class="container">
+        <div class="column">
+            <h2>なぜデスクトップに保存しないのか</h2>
+            <p>ホーム画面に常に表示するなどとても容量を食います。そのためデスクトップでの保存はおすすめしません。</p>
+        </div>
+        <div class="column">
+            <h2>なぜC:¥Users¥ユーザ名¥ダウンロードなどの既存のフォルダに保存しないのか</h2>
+            <p>ダウンロードにはダウンロードされたファイルが保存されます。自分用のフォルダを作成した方が整理しやすくなるため作成を推奨しています。</p>
+        </div>
+    </div>
 
     <h3 id="dfa1ad25-c41b-45cb-8c5a-475c0d208f1c" class="">4.PC->OS(C:)->ユーザー->ユーザー名に新しいフォルダを作ってみよう</h3>
     <p id="b6cee4fa-0596-4771-88f9-2234c3709135" class="">Ctrl + Shift + Nで作成できるよ(何もないところを右クリック->新規作成->フォルダでも可)<br>フォルダ名は英語表記でなるべくローマ字ではなく英語として意味を持つものがおすすめ。</br></p>
@@ -142,15 +136,6 @@
         <h3>&lt;h2&gt;3番目の見出し&lt;/h2&gt;</h3>
         <p>&lt;p&gt;内容記述&lt;/p&gt;</p></code></pre></div>
 
-<!-- <div class = How>
-    <h3 id="aac161d2-35db-44b1-88f1-071cc95161bb" class="">タグについて</h3></li></ol> -->
-    <!-- <ol type="1" id="27629091-2566-4d14-93e5-78ac41c7e421" class="numbered-list" start="2"><li> 文字の大きさを決めるものではないことに注意しましょう。</li></ol> -->
-        <!-- <pre id="0b04aa39-6500-4287-845f-7f88dbd118fe" class="code code-wrap"><code>
-        <p>// このように、見出しを区別することができます。</p>
-        <p>&lt;img src = "URL" /img&gt;  //画像を挿入することができる</p>
-        <p>&lt;a href = "URL"&gt;words&lt;/a&gt;  //リンクを作成することができる</p> -->
-        <!-- <h3>&lt;h2&gt;3番目の見出し&lt;/h2&gt;</h3>
-        <p>&lt;p&gt;内容記述&lt;/p&gt;</p> -->
     </code></div></div>
     <h2 id="fd3f3d5e-1df8-4231-9be9-7a63f2ba7d59" class="">STEP4 CSSについて学ぼう</h2>
     <div class = How>
@@ -221,82 +206,5 @@
         <ol type="1" id="2c9463af-61d3-4e98-b363-03c89bca6fdd" class="numbered-list" start="3"><li>Visit siteをクリックする</li></ol>
         <img src = "push12.png"></img>
         <p>サイトは見れましたか</p>
+
         
-    <!-- <h3 id="ead388f5-b773-4faa-81c8-7c58064c8583" class="">やってみよう！</h3><p id="c4d95bb3-ecfb-4747-805f-250699adc57e" class="">ぜひ、積極的にコードを書いて、いろいろと試してください。初めのうちは、十分理解していないコードを書くのに違和感があるかも。でも、大丈夫！むしろ、手を動かすことで理解が進みます。すぐに慣れますよ👍</p><p id="c86bacb8-a0a9-48ee-a964-d0550b5ea620" class="">
-    </p><ol type="1" id="171e0a25-a05c-47b6-9ce9-09d2d2012f90" class="numbered-list" start="1"><li>以下の質問の答えを、実際にコーディングしながら試すことで、導き出してみてください。<ol type="a" id="2f2f4cd5-ae37-45a4-b857-29be99f7e41a" class="numbered-list" start="1"><li><code>文字列型（string）</code>の値 と <code>数値型（number）</code>の値 を足したらどうなりますか？</li></ol><ol type="a" id="0c6ba020-dff4-42b4-bfad-0f7bfbbe645d" class="numbered-list" start="2"><li>その順番を逆にしたらどうなりますか (例 <code>数値型（number）</code> + <code>文字列型（string）</code>)？</li></ol><ol type="a" id="86838d74-946d-4b41-9763-10f4bf53ec84" class="numbered-list" start="3"><li><code>数値型（number）</code> の 5 に <code>文字列型（string）</code> の &quot;5&quot; を掛け算するとどうなりますか？</li></ol></li></ol><ol type="1" id="50263f03-0947-44a6-92e1-ce4ea58c2370" class="numbered-list" start="2"><li>コンソールに 1 行ずつ、以下の式を入力してみましょう。<code>.length</code> を追加するとどうなると思いますか？ ほかの文字列の長さも確認してみましょう。<pre id="836f9579-3535-43dc-8afa-32859af02355" class="code code-wrap"><code>&quot;hello&quot;.length;
-    &quot;hello world&quot;.length;
-    &quot;123&quot;.length;</code></pre></li></ol><ol type="1" id="ce71172b-c9ae-4dd4-bd55-346444a327cf" class="numbered-list" start="3"><li>以下はどうなりますか？<pre id="000846b2-7908-49a2-ae8e-3fd745ec7990" class="code code-wrap"><code>&quot;hello&quot;.toUpperCase();
-    &quot;HELLO&quot;.toLowerCase();
-    &quot;hello&quot;.endsWith(&quot;o&quot;);
-    &quot;hello&quot;.endsWith(&quot;e&quot;);
-    &quot;hello&quot;.endsWith(&quot;llo&quot;);
-    &quot;hello&quot;.endsWith();</code></pre><p id="b0ed5fe9-3dd7-46d5-ae00-2ebdb5da18d2" class=""><code>.toUpperCase()</code>、 <code>.toLowerCase()</code>、<code>.endsWith()</code>などは、ネイティブメソッドと呼ばれるもの、もともとJavaScript に組み込まれており、文字列に対してのみ使用できます。</p></li></ol><ol type="1" id="54a2050e-371e-4ef6-94e7-256b0ecdf6e9" class="numbered-list" start="4"><li>上記で使用したメソッドに関する情報は、どこで見つけられるでしょう？調べてみましょう。</li></ol><ol type="1" id="405d3824-25d1-4a12-9ae6-6a48e0913cce" class="numbered-list" start="5"><li><a href="https://eloquentjavascript.net/01_values.html">Eloquent Javascript</a>を読んでみてください！</li></ol><h2 id="7ed59ab5-6884-4069-9486-7bf625f70399" class="">P01-2 変数入門</h2><h3 id="c1d8ed48-0818-4e4e-8019-17a2073d4993" class="">演習問題</h3><p id="c01ba944-3559-4e39-95ac-1114b97f9bda" class=""><a href="https://drive.google.com/file/d/1OxMzX0p9Z5_PNAK27a-n2DfTTUTooii9/view?usp=sharing">ここ</a>から<code>waffle_foundation.zip</code>をダウンロードしてください。
-    <code>_lesson-templates</code> フォルダを複製して、<code>variables-intro</code> という名前のフォルダを作り、<code>script.js</code>ファイルをエディタ（VScodeなど）で開きましょう。
-    以下の演習は <code>script.js</code> に書いて進めていきます。</p><p id="ff6c2927-e938-49e3-b3cc-a3fce852c37b" class="">
-    </p><ol type="1" id="ba2a26fd-9c99-4990-b855-834f5d723ac4" class="numbered-list" start="1"><li><code>name</code>, <code>age</code>, <code>isProgrammer</code>, <code>currentTask</code> という変数を宣言し、テストケース（コメントに書いてある内容）を満たすように値を割り当てましょう。<code>let</code> と <code>const</code> を使ってください。どの変数が再割り当て <strong>すべきではないか</strong> を考える必要があります🤔<pre id="1e9b843c-5b4a-4f91-b783-2c48b23584b6" class="code code-wrap"><code>// 例
-    const school = &quot;Waffle College&quot;;
-    console.log(school); // &quot;Waffle College&quot; を表示
-    let week = 1;
-    console.log(week); // &quot;1&quot; を表示
-    
-    // 以下、問題です
-    
-    // ここにあなたのコードを書いてください
-    console.log(name); // あなたの名前を表示
-    
-    // ここにあなたのコードを書いてください
-    console.log(age); // あなたの年齢を表示
-    
-    // ここにあなたのコードを書いてください
-    console.log(isProgrammer); // &quot;true&quot; を表示
-    
-    // ここにあなたのコードを書いてください
-    console.log(currentTask); // &quot;1&quot; を表示</code></pre></li></ol><ol type="1" id="8d123da8-dbab-4477-9983-06e8bd6dd61c" class="numbered-list" start="2"><li><code>currentTask</code> に 2 を割り当て直してください。<pre id="19d3b0c2-53ee-4ef2-b314-c38676ecd6d8" class="code code-wrap"><code>// ここにあなたのコードを書いてください
-    console.log(currentTask); // &quot;2&quot; を表示</code></pre></li></ol><ol type="1" id="f69180f8-4a6d-467c-87c9-c8c2f8e45b40" class="numbered-list" start="3"><li>基本的な数式を計算しましょう。 数式がわからない時は Google で調べましょう。<pre id="90c15ee4-e5dc-46fe-8a0e-7025ba40eef9" class="code code-wrap"><code>// 正方形の面積を計算して保存
-    const squareSideLength = 2;
-    // ここにあなたのコードを書いてください
-    
-    console.log(squareArea); // &quot;4&quot; を表示
-    
-    // 長方形の面積を計算して保存
-    const rectangleBaseLength = 3;
-    const rectangleHeightLength = 4;
-    // ここにあなたのコードを書いてください
-    
-    console.log(rectangleArea); // &quot;12&quot; を表示
-    
-    // 三角形の面積を計算して保存
-    const triangleBaseLength = 4;
-    const triangleHeightLength = 5;
-    // ここにあなたのコードを書いてください
-    
-    console.log(triangleArea); // &quot;10&quot; を表示</code></pre></li></ol><h3 id="451df773-cba4-469d-b033-a3f8c58a8246" class="">変数のタイプ</h3><ol type="1" id="7492badd-9abb-46ae-91ca-ea1ca5d760c5" class="numbered-list" start="1"><li>JavaScript の演算子 <code>typeof</code> を使ってみましょう。この演算子に関する情報は、<a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/typeof">ここ</a> から手に入れることができます。<p id="5b06578f-8cdc-4276-a3c1-9c048fd5fe7c" class="">※最初の問題は解答例を載せてあります。</p><pre id="6231a864-e03c-4a96-b3b5-4dff0d8bb38b" class="code code-wrap"><code>// 例
-    const variableString = &quot;I am a string&quot;;
-    console.log(typeof variableString); // &quot;string&quot;と表示されましたか？
-    
-    // 問題1
-    const variableNumber = ???;         // &quot;number&quot;と表示させるにはどんな値を代入すればいいでしょう？ &quot;？？？&quot;に値を入れてみてください。
-    console.log(typeof variableNumber); // &quot;number&quot;と表示されましたか？
-    
-    // 問題2
-    // ここにコードを書いて、&quot;boolean&quot;と表示されるようにしてください。
-    console.log(typeof variableBoolean);
-    
-    // 問題3
-    //ここにコードを書いて、&quot;undefined&quot;と表示されるようにしてください。
-    console.log(typeof variableUndefined);</code></pre></li></ol><ol type="1" id="127977a5-eb4c-49fe-adaa-5e4f49709506" class="numbered-list" start="2"><li>2 つの <code>number</code> の <em>平均</em> を計算して変数に格納しましょう。&quot;？？？&quot;に値や式を入れてみてください。</li></ol><pre id="03e16cdb-7fbc-4ca7-9243-f88e54f6b04e" class="code code-wrap"><code>const numberA = ???;
-    const numberB = ???;
-    
-    const average = ???;
-    console.log(average); // numberA と numberB の平均が表示される。</code></pre><h3 id="a0cda293-47f0-40a1-909e-1656cc26f2e4" class="">中級演習</h3><ol type="1" id="545ae9ba-38fe-4823-82ed-c7bd263410f0" class="numbered-list" start="1"><li>あなたが予想した答えとは <em>少し</em> 異なるかもしれませんが、心配しないでください。結果が予想した値と<strong>近ければ</strong>正解です。<pre id="8662a063-207b-414d-95be-90b9b6874e85" class="code code-wrap"><code>// 円の円周と面積を計算して保存する
-    const circleDiameter = 10;
-    // ここにあなたのコードを書いてください
-    
-    console.log(circleCircumference); // &quot;31.41592653589793&quot; に近い値を表示
-    console.log(circleArea); // &quot;78.53981633974483&quot; に近い値を表示</code></pre></li></ol><ol type="1" id="6c26d880-22e2-440d-92bd-fdd961d56642" class="numbered-list" start="2"><li>値を直接再割り当てせずに <code>a</code> と <code>b</code> の値を入れ替えて、期待通りの値が出力されるようにしましょう。<p id="d9adddc6-af82-4b5d-bfb3-56fc536cbf40" class=""><strong>ヒント：</strong> データを一時的に保存するために別の変数を作成する必要があります。</p><pre id="5ec05f4d-1f93-488b-b4de-ef5189207311" class="code code-wrap"><code>let a = &quot;B&quot;;
-    let b = &quot;A&quot;;
-    
-    // ここにあなたのコードを書いてください
-    
-    console.log(a); // &quot;A&quot; を表示
-    console.log(b); // &quot;B&quot; を表示</code></pre></li></ol><ol type="1" id="1a318f3e-184e-465d-b396-bd82c61bd8d0" class="numbered-list" start="3"><li>皆さんなら、変数を使ってどんな問題を出しますか？習った内容を駆使して、<strong>変数の練習問題</strong>を作ってみましょう！</li></ol></div></article></body></html> -->
