@@ -92,111 +92,27 @@
         <h3>4.PC->OS(C:)->ユーザー->ユーザー名に新しいフォルダを作ってみよう</h3>
         <p>Ctrl + Shift + Nで作成できるよ(何もないところを右クリック->新規作成->フォルダでも可)<br>フォルダ名は英語表記でなるべくローマ字ではなく英語として意味を持つものがおすすめ。</br></p>
 
-        <h2>STEP3 HTMLについて学ぼう</h2>
         
-    <h3>主な構成</h3>
-        <div class = HTML>
-            <p>// HTMLの主な構成。</p>
-        <p>&lt;!DOCTYPE html&gt;  //htmlという言語でかいていることを宣言している</p>
-        <p>&lt;html&gt; //html開始</p>
-
-        <p>&lt;head&gt;  //タブの中の情報を宣言</p>
-            <p> //タブに表示されるタイトルを宣言</p>
-            <p><pre>&lt;title&gt;your site name&lt;/title&gt;</pre> </p>
-            <p>//CSSとのリンクづけを行っている
-                <pre>    &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;</pre></p>
-            <p>//タブの左に表示される画像をリンクづけしている
-                    &lt;link rel="icon" href="???.png"&gt;</p>
-
-        <p>&lt;/head&gt;</p>
-
-        <p>&lt;body&gt;</p>
-        <p><pre>    &lt;header&gt;</pre></p>
-        <p><pre>    &lt;/header&gt;</pre></p>
-
-        <p><pre>    &lt;main&gt;</pre></p>
-        <p><pre>    &lt;/main&gt;</pre></p>
-
-        <p><pre>    &lt;footer&gt;</pre></p>
-        <p><pre>    &lt;/footer&gt;</pre></p>
-        
-        <p>&lt;/body&gt;</p>
-            
-        <p>&lt;/html&gt;</p>
-    </code>
-        </pre>
-        <img src = "vscode10.png"></img>
-        <img src = "vscode11.png"></img>
-        <img src = "vscode12.png"></img>
-        <img src = "vscode13.png"></img>
-        <img src = "vscode14.png"></img>
-        <img src = "vscode15.png"></img>
-        <img src = "vscode16.png"></img>
-
-    </div>
-
-
-    <div class = How>
-        <h3 >基本的なかき方</h3>
-        <ol start="1"><li>見出しごとに表記が異なります。</li></ol>
-        <ol start="2"><li> 文字の大きさを決めるものではないことに注意しましょう。</li></ol>
-            <p>// このように、見出しを区別することができます。</p>
-            <h1>&lt;h1&gt;1番目の見出し&lt;/h1&gt;</h1>
-            <h2>&lt;h2&gt;2番目の見出し&lt;/h2&gt;</h2>
-            <h3>&lt;h2&gt;3番目の見出し&lt;/h2&gt;</h3>
-            <p>&lt;p&gt;内容記述&lt;/p&gt;</p>
-    </div>
-
-        <h2>STEP4 CSSについて学ぼう</h2>
-        <div class = How>
-            <h3>基本的なかき方</h3>
-            <p>// CSSのかき方
-            header {
-                background-color: white;
-                color: black;
-            }
-            
-            .logo img {
-                width: 150px;
-                height: auto;
-            }</p>
-        </div>
-        <img src = "vscode17.png"></img>
-        <img src = "vscode18.png"></img>
-        <img src = "vscode19.png"></img>
-        <img src = "vscode20.png"></img>
-        <img src = "vscode21.png"></img>
-        <img src = "vscode22.png"></img>
-        <img src = "vscode23.png"></img>
-        <img src = "vscode24.png"></img>
-
-        <div class = How>
-            <h3>classの概念について</h3>
-            <p>// HTMLのclassと結びつけて考える</p>
-            <p>//HTML</p>
-            <p>&lt;div class = "classic"&gt;</p>
-                
-            <p>&lt;/div&gt;</p>
-
-            <p>//CSS</p>
-            <p> .classic{
-                background-color: white;
-                color: black;
-            }</p>
-        </div>
-        
-            <h2>STEP5 VScode(Visual Studio Code)でホームページを作ろう</h2>
-            <h3>1.VScodeでフォルダを開こう</h3>
+            <h2>STEP3 VScode(Visual Studio Code)でホームページを作ろう</h2>
+            <h3>1.VScodeの自動保存機能を有効にする</h3>
             <ol start="1"><li>VScodeを開く</li></ol>
-            <img src = "vscode1.png"></img>
-            <ol start="2"><li> 左上のファイル(F)をクリック</li></ol>
-            <ol start="3"><li>フォルダを開くを選択</li></ol>
-            <img src = "vscode2.png"></img>
-            <ol start="4"><li>フォルダを選択</li></ol>
-            <ol start="5"><li>ターミナルでecho >ファイル名と入力し、新しいファイルを作成する。</li></ol>
-            <img src = "vscode3.png"></img>
-            <img src = "vscode4.png"></img>
             <img src = "vscode5.png"></img>
+
+            <ol start="2"><li> ⚙️マークをクリック</li></ol>
+            <ol start="3"><li>設定をクリック</li></ol>
+            <img src = "vscode1.png"></img>
+            <ol start="4"><li>Auto Saveを検索</li></ol>
+            <ol start="5"><li>afterDelayを選択</li></ol>
+            <img src = "vscode2.png"></img>
+            <h3>2.VScodeでWebサイトを閲覧するための拡張機能をインストールする</h3>
+            <ol start="1"><li>次に上から5番目のアイコンをクリックする</li></ol>
+            <ol start="2"><li>HTML Previewと検索する</li></ol>
+            <ol start="3"><li>インストールをクリック</li></ol>
+            <img src = "vscode3.png"></img>
+            <ol start="1"><li>Live Previewと検索する</li></ol>
+            <ol start="2"><li>インストールをクリック</li></ol>
+            <img src = "vscode4.png"></img>
+
             <img src = "vscode6.png"></img>
             <img src = "vscode7.png"></img>
             <img src = "vscode8.png"></img>
@@ -238,4 +154,98 @@
             <img src = "push12.png"></img>
             <p>サイトは見れましたか</p>
 
+        
+
+            <h2>STEP3 HTMLについて学ぼう</h2>
+        
+            <h3>主な構成</h3>
+                <div class = HTML>
+                    <p>// HTMLの主な構成。</p>
+                <p>&lt;!DOCTYPE html&gt;  //htmlという言語でかいていることを宣言している</p>
+                <p>&lt;html&gt; //html開始</p>
+        
+                <p>&lt;head&gt;  //タブの中の情報を宣言</p>
+                    <p> //タブに表示されるタイトルを宣言</p>
+                    <p><pre>&lt;title&gt;your site name&lt;/title&gt;</pre> </p>
+                    <p>//CSSとのリンクづけを行っている
+                        <pre>    &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;</pre></p>
+                    <p>//タブの左に表示される画像をリンクづけしている
+                            &lt;link rel="icon" href="???.png"&gt;</p>
+        
+                <p>&lt;/head&gt;</p>
+        
+                <p>&lt;body&gt;</p>
+                <p><pre>    &lt;header&gt;</pre></p>
+                <p><pre>    &lt;/header&gt;</pre></p>
+        
+                <p><pre>    &lt;main&gt;</pre></p>
+                <p><pre>    &lt;/main&gt;</pre></p>
+        
+                <p><pre>    &lt;footer&gt;</pre></p>
+                <p><pre>    &lt;/footer&gt;</pre></p>
+                
+                <p>&lt;/body&gt;</p>
+                    
+                <p>&lt;/html&gt;</p>
+            </code>
+                </pre>
+                <img src = "vscode10.png"></img>
+                <img src = "vscode11.png"></img>
+                <img src = "vscode12.png"></img>
+                <img src = "vscode13.png"></img>
+                <img src = "vscode14.png"></img>
+                <img src = "vscode15.png"></img>
+                <img src = "vscode16.png"></img>
+        
+            </div>
+        
+        
+            <div class = How>
+                <h3 >基本的なかき方</h3>
+                <ol start="1"><li>見出しごとに表記が異なります。</li></ol>
+                <ol start="2"><li> 文字の大きさを決めるものではないことに注意しましょう。</li></ol>
+                    <p>// このように、見出しを区別することができます。</p>
+                    <h1>&lt;h1&gt;1番目の見出し&lt;/h1&gt;</h1>
+                    <h2>&lt;h2&gt;2番目の見出し&lt;/h2&gt;</h2>
+                    <h3>&lt;h2&gt;3番目の見出し&lt;/h2&gt;</h3>
+                    <p>&lt;p&gt;内容記述&lt;/p&gt;</p>
+            </div>
+        
+                <h2>STEP4 CSSについて学ぼう</h2>
+                <div class = How>
+                    <h3>基本的なかき方</h3>
+                    <p>// CSSのかき方
+                    header {
+                        background-color: white;
+                        color: black;
+                    }
+                    
+                    .logo img {
+                        width: 150px;
+                        height: auto;
+                    }</p>
+                </div>
+                <img src = "vscode17.png"></img>
+                <img src = "vscode18.png"></img>
+                <img src = "vscode19.png"></img>
+                <img src = "vscode20.png"></img>
+                <img src = "vscode21.png"></img>
+                <img src = "vscode22.png"></img>
+                <img src = "vscode23.png"></img>
+                <img src = "vscode24.png"></img>
+        
+                <div class = How>
+                    <h3>classの概念について</h3>
+                    <p>// HTMLのclassと結びつけて考える</p>
+                    <p>//HTML</p>
+                    <p>&lt;div class = "classic"&gt;</p>
+                        
+                    <p>&lt;/div&gt;</p>
+        
+                    <p>//CSS</p>
+                    <p> .classic{
+                        background-color: white;
+                        color: black;
+                    }</p>
+                </div>
         
